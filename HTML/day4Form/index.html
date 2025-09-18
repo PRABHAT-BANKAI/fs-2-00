@@ -1,0 +1,84 @@
+<!-- 
+ <Form> <Select> <Option> <Text Area><Button><Input Type=”Text, Email, Password, Tel, Color, Range, File, Date, Radio, Checkbox”/>Button Tag Attribute : Type=”Reset”, Type=”Submit”Required, Selected Attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registeration form</h1>
+    <form>
+      <div>
+        <label for="email">Email:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div>
+        <label for="">User name:</label>
+        <input type="text" />
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" type="password" required />
+      </div>
+      <div>
+        <label for="">Telephone:</label>
+        <input
+          id=""
+          type="tel"
+          placeholder="123-456-7890"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+      </div>
+      <div>
+        <label for="">Color:</label>
+        <input type="color" />
+      </div>
+      <div>
+        <label for="">Performance:</label>
+        <input type="range" />
+      </div>
+      <div>
+        <label for="">Uploads file:</label>
+        <input type="file" multiple />
+      </div>
+      <div>
+        <label for="">Date:</label>
+        <input type="date" />
+      </div>
+
+      <div>
+        <label for="">Gender:</label>
+        <input name="gender" type="radio" />Male
+        <input name="gender" type="radio" />Female
+      </div>
+      <div>
+        <label for="">hobbies</label>
+        <input type="checkbox" />Cycling <input type="checkbox" />coding
+        <input type="checkbox" />traveling
+      </div>
+      <div>
+        <label for="">Sports</label>
+        <select name="" id="">
+          <option value="cricket">cricket</option>
+          <option value="">Table tennis</option>
+          <option selected data="" type="">hockey</option>
+        </select>
+        <textarea name="" id=""></textarea>
+      </div>
+      <button>Sumbit</button>
+      <br />
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+
+    <button>outer button</button>
+  </body>
+</html>
