@@ -1,0 +1,84 @@
+<!-- 	
+Introduction Of CSS
+
+- CSS Type : Internal, Inline, External CSS
+
+- Text Properties : font-family, font-size, font-weight, text-align, line-height, letter-spacing, word-spacing, text-decoration, font-style, text- transform, text-indent, color, list-style
+
+- CSS Apply : <tag>, .class, #id
+
+- Ex : CSS Type & Text Properties Practice -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- priority of css  inline >internal>external -->
+
+    <!-- css selector  id>class>tagname -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- internal css  -->
+    <style>
+      /* tagname for css */
+      /* universal selector */
+      *{
+        color: red;
+      }
+      h2 {
+        color: blue;
+        background-color: yellow;
+      }
+      #text {
+        color: green;
+      }
+      .color {
+        color: greenyellow;
+      }
+      .bgcol {
+        background-color: red;
+      }
+      .text-align {
+        text-align: end;
+      }
+      .line {
+        background-color: yellow;
+        line-height: 55px;
+        text-decoration: underline;
+        font-style: oblique;
+      }
+      /* css selectors  id   class    bytagname  */
+    </style>
+  </head>
+  <body>
+    <!-- inline css -->
+    <!-- <h1 style="color: red">CSS (cascading stylesheet)</h1>
+    <h2>Inline css</h2>
+    <h2>hello world</h2>
+
+    <p>external css</p> -->
+
+    <p id="text">catching from css id #</p>
+    <p class="color bgcol">catching from css class</p>
+
+    <p class="font">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta voluptates
+      ullam aperiam temporibus ex minima maxime totam nostrum! Repellendus ea in
+      obcaecati perspiciatis nisi quam omnis expedita ullam maiores facere!
+    </p>
+    <p class="text-align">text align</p>
+    <p class="line">line line-height</p>
+
+    <ul>
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+
+    <p>onetwo</p>
+    <h3>fiveseven</h3>
+    <h5>hello</h5>
+    <h6>world</h6>
+  </body>
+</html>
