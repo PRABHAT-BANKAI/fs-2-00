@@ -1,0 +1,48 @@
+<!--
+	
+Background Image, size, repeat, position, attachment
+
+- Types Of Gradient : Linear, Radial, Conic
+
+-Two class Property , Parent-child Property
+
+- Ex : Create Parallax Scrolling Effect  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-container {
+        background-image: url(./image.jpeg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        background-attachment: fixed;
+      }
+      .box-2 {
+        height: 500px;
+        width: 200px;
+        border: 1px solid black;
+      }
+      .box-3 {
+        height: 100px;
+        width: 400px;
+        border: 1px solid black;
+        /* background: radial-gradient(red,green,blue,brown); */
+        background: conic-gradient(red, green, blue, brown);
+        background: linear-gradient(red, green, blue, brown);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container"></div>
+    <div class="box-2"></div>
+
+    <div class="box-3"></div>
+  </body>
+</html>
