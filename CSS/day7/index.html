@@ -1,0 +1,104 @@
+<!-- 	
+Selector div,P, Div P, Div > P:First Letter, :First Line, :First Child, :LastChild, :Nth Child(), :Nth Last Child(), ::Selection -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1,
+      h2 {
+        color: red;
+      }
+
+      /* Descendant combinator (space) The descendant combinator matches all elements that are descendants (children, grandchildren, etc.) of a specified element. */
+      /* .main-card p {
+        color: rgb(36, 196, 8);
+      } */
+
+      /* Child combinator (>) The child combinator selects all elements that are direct children of a specified element. */
+      .main-card > h2 {
+        color: rgb(36, 196, 8);
+      }
+
+      /* 
+      Next sibling combinator (+)
+Subsequent-sibling combinator (~) */
+      /* .article::first-letter {
+        color: green;
+        font-size: 24px;
+      }
+      .article::first-line {
+        background-color: yellow;
+      }
+
+      p:first-child {
+        background-color: red;
+      }
+      p:last-child {
+        background-color: rgb(28, 40, 151);
+      } */
+      /* p:nth-child(1) {
+        color: red;
+      }
+
+      p:hover{
+        background-color: aqua;
+      } */
+      /* p:nth-last-child(2) {
+        color: aquamarine;
+      } */
+       .sentence::selection{
+        background-color: green;
+        color: yellow;
+       }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 id="head" class="head-1">CSS Combinators</h1>
+    <h2 id="text" class="head-2">heading 2</h2>
+
+    <div class="main-card">
+      <p>one</p>
+      <p>two</p>
+      <p>three</p>
+      <h2>hi</h2>
+      <div>
+        <p>five</p>
+        <p>six</p>
+        <div>
+          <p>seven</p>
+          <p>eight</p>
+        </div>
+      </div>
+      
+    </div> -->
+
+    <!-- <p class="article">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dicta
+      exercitationem adipisci placeat quisquam, fugiat rem labore neque at vel
+      fugit officiis atque nulla ex nostrum, velit temporibus facere
+      perspiciatis!
+    </p> -->
+
+    <div>
+      <p>1</p>
+      <p>23</p>
+      <p>2</p>
+    </div>
+    <div>
+      <p>4</p>
+    </div>
+    <div>
+      <p>5</p>
+      <p>6</p>
+      <h2>7</h2>
+      <div>
+        <p>112</p>
+        <p>55</p>
+      </div>
+    </div>
+    <p class="sentence">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolores eveniet tempora illo quidem, ipsum fugiat aliquid error doloribus iusto maiores eos aut nihil obcaecati quibusdam iste quaerat suscipit maxime.</p>
+  </body>
+</html>

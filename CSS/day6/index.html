@@ -1,0 +1,71 @@
+<!-- Display Properties: block, inline, inline-block, none -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h2 {
+        display: inline;
+      }
+
+      b {
+        display: block;
+      }
+      span {
+        background-color: red;
+        padding: 45px;
+        display: inline-block;
+        /* display: none; */
+        /* visibility: hidden; */
+      }
+      .box {
+        height: 300px;
+        border-radius: 10px;
+        width: 200px;
+        display: inline-block;
+        border: 1px solid black;
+        padding: 15px;
+      }
+      img{
+        display: block;
+        margin: auto;
+      
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <h2>world</h2>
+    <h2>Earth</h2>
+    <p>para</p>
+    <b>BOld tag</b>
+    <i>italic tag</i>
+
+    <p>
+      Lorem, ipsum <span>Batman</span> sit amet consectetur adipisicing elit.
+      Error tempora commodi illum nemo pariatur suscipit nesciunt, dicta
+      repellendus modi quidem odio quia? Necessitatibus consequuntur excepturi
+      veniam. Exercitationem error quo illum!
+    </p>
+
+    <div class="box">
+      <img
+        src="https://m.media-amazon.com/images/I/51bOuKwZfpL._SY300_SX300_QL70_FMwebp_.jpg"
+        alt=""
+        height="100px"
+      />
+      <p>⭐⭐⭐⭐⭐</p>
+    </div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </body>
+</html>
