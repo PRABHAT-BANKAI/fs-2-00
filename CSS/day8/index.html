@@ -1,0 +1,55 @@
+<!-- 
+ Before, After, Transform, Hover & Transition
+
+- Transform Property : translate, rotate, scale, skew   Hover - :hover
+
+- Transition Property : duration, timing-function, delay, property -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1::before {
+        content: "😊";
+      }
+      h1::after {
+        content: " hi from world";
+      }
+      .box {
+        height: 120px;
+        width: 120px;
+        border: 1px solid red;
+        /* transform: rotate(45deg) ; */
+        /* zoom in zoom out  */
+        /* transform: scale(0.2); */
+        /* transform: translate(50% ,150%); */
+        /* transform: skew(155deg) ; */
+        transition-duration: 5s;
+        transition-property: width hieght;
+        /* transition-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045) ; */
+        /* transition-delay:2s ; */
+      }
+
+      .box:hover {
+        height: 200px;
+        width: 200px;
+        background-color: chartreuse;
+        transform: rotate(360deg);
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>hello world</h1>
+
+    <div class="box">box1</div>
+  </body>
+</html>
