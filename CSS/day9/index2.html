@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main-container {
+        height: 600px;
+        width: 600px;
+        background-color: yellow;
+        position: relative;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+        position: absolute;
+      }
+      .box1 {
+        background-color: rgb(14, 96, 38);
+        top: 100px;
+        left: 100px;
+        z-index: 5;
+      }
+
+      .box2 {
+        background-color: rgb(230, 180, 44);
+        top: 120px;
+        left: 120px;
+      }
+      .box3 {
+        background-color: rgb(44, 168, 116);
+        top: 140px;
+        left: 140px;
+        z-index: 6;
+      }
+      .box4 {
+        background-color: blue;
+        top: 160px;
+        left: 160px;
+        z-index: -1;
+      }
+      .card {
+        height: 300px;
+        width: 200px;
+        border: 1px solid black;
+        overflow: hidden;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+      <div class="box box4"></div>
+    </div>
+
+    <div class="card">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam distinctio
+      officia dolorum adipisci ipsam consequatur, minima numquam temporibus.
+      Architecto corporis, vitae velit voluptas fuga iusto minus hic quisquam
+      deserunt? Asperiores. Quas obcaecati excepturi ipsa? Iusto facere quis ex
+      quaerat sapiente eligendi. Quo ea temporibus beatae odio illum eos
+      adipisci quod architecto facere, minima delectus, vel eveniet esse ipsa
+      error. Natus! Earum exercitationem, explicabo dignissimos deserunt hic
+      doloribus, cumque et pariatur at recusandae, magni ut ipsum temporibus
+      doloremque architecto delectus! Consequatur voluptatum architecto alias
+      placeat vero, quisquam culpa in ducimus porro.
+    </div>
+  </body>
+</html>
