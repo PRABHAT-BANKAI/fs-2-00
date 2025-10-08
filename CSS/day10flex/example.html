@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: 0;
+      }
+
+      .box1 {
+        width: 20%;
+        height: 100vh;
+        border: 1px solid black;
+      }
+      .box2 {
+        width: 80%;
+        height: 100vh;
+        border: 1px solid rgb(0, 0, 0);
+        position: relative;
+      }
+      section {
+        display: flex;
+      }
+      .card {
+        height: 100px;
+        width: 100px;
+        border: 2px solid green;
+        position: absolute;
+      }
+      .c1 {
+        top: 100px;
+        left: 100px;
+      }
+      .c2 {
+        top: 110px;
+        left: 250px;
+      }
+      .c3 {
+        top: 140px;
+        left: 300px;
+      }
+      .c4 {
+        top: 180px;
+        left: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="box1"></div>
+      <div class="box2">
+        <div class="card c1"></div>
+        <div class="card c2"></div>
+        <div class="card c3"></div>
+        <div class="card c4"></div>
+      </div>
+    </section>
+  </body>
+</html>

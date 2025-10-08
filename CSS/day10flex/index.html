@@ -1,0 +1,52 @@
+<!-- 
+ 
+Display Flex (Parent Property)Display: Flex FlexDirection (Row, Row Reverse, Column, Column Reverse)Flex Wrap (Nowrap, Wrap, Wrap Reverse)Flex Flow (Flex Direction Flex Wrap)-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+      }
+      .main-container {
+        height: 100vh;
+        border: 1px solid rgb(174, 17, 17);
+        display: flex;
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap-reverse; */
+
+        flex-flow: row wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+      <div class="box">box 4</div>
+      <div class="box">box 5</div>
+    </div>
+  </body>
+</html>
