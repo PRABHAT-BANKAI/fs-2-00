@@ -1,0 +1,42 @@
+<!-- 
+ 	
+Box Model
+
+- width, height, background-color, content, padding, box-sizing, margin, border, border-radius
+
+- Ex : Create Box Design (Padding, Margin, Content, Border) -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./Expert Session.png">
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .card {
+        height: 200px;
+        width: 400px;
+        background-color: yellow;
+        /* border-top: 2px;
+        border-style: solid;
+        border-width: 25px; */
+
+        border: 10px dashed red;
+        /* padding: 25px 50px 10px 15px; */
+        padding: 50px ;
+        margin: 20px;
+        /* border-radius: 50% 10% 5% 0%; */
+        border-radius: 100% 0% 19% 81% / 100% 0% 100% 0% ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">box1</div>
+  </body>
+</html>
