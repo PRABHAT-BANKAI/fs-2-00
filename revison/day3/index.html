@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        height: 70px;
+        background-color: rgba(0, 255, 255, 0.256);
+        display: flex;
+        align-items: center;
+        padding: 0 10%;
+        justify-content: space-between;
+      }
+      .logo {
+        font-size: 35px;
+        color: red;
+      }
+      .nav {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+      .btn-nav {
+        background-color: red;
+        height: 32px;
+        width: 76px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .menu-icon {
+        display: none;
+      }
+      body {
+        background-image: url(./netflix-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .sec-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 70px);
+      }
+      .inner-container{
+        width: 500px;
+      }
+      .p-h-1 {
+        font-size: 40px;
+        color: white;
+        font-weight: 900;
+        text-align: center;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .menu-icon {
+          display: block;
+        }
+        .nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Netflix</div>
+      <div class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="nav">
+        <div>
+          <select name="" id="">
+            <option value="">English</option>
+          </select>
+        </div>
+        <div class="btn-nav"><p>Sign In</p></div>
+      </div>
+    </header>
+    <section class="sec-1">
+      <div class="inner-container">
+        <p class="p-h-1">Unlimited movies, shows, and more</p>
+        <p>Starts at ₹149. Cancel at any time.</p>
+      </div>
+    </section>
+  </body>
+</html>
